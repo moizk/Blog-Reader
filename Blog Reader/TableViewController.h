@@ -11,7 +11,7 @@
 @interface TableViewController : UITableViewController
 
 
-@property (nonatomic, strong) NSArray *titles;
+@property (nonatomic, strong) NSArray *blogPosts;
 
 
 

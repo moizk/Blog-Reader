@@ -27,13 +27,15 @@
 {
     [super viewDidLoad];
     
-    self.titles = [NSArray arrayWithObjects:@"The Missing Widget in the Android SDK: SmartImageView",
-                   @"Get started with iOS Development",
-                   @"An Interview with Shay Howe",
-                   @"Treehouse Friends: Paul Irish",
-                   @"Getting A Job In Web Design and Development",
-                   @"Treehouse Show Episode 13 &#8211; LLJS, Navicons and Framework Flights",
-                   nil];
+    NSURL *blogURL = [NSURL URLWithString:@"http://blog.teamtreehouse.com/api/get_recent_summary/" ];
+    NSData *jsonData = [NSData dataWithContentsOfURL:blogURL ];
+    NSError *error = nil;
+    NSDictionary *dataDictionary = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:&error];
+    
+//    NSLog(@"%@", blogPost1);
+    
+    self.blogPosts = [dataDictionary objectForKey:@"posts"];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -53,7 +55,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [self.titles count];
+    return [self.blogPosts count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -61,7 +63,10 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    cell.textLabel.text = [self.titles objectAtIndex:indexPath.row];
+    
+    NSDictionary *blogPost = [self.blogPosts objectAtIndex:indexPath.row];
+    cell.textLabel.text = [blogPost valueForKey:@"title"];
+    cell.detailTextLabel.text = [blogPost valueForKey:@"author"];
     
     return cell;
 }
