@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TableViewController.h
 //  Blog Reader
 //
 //  Created by Moiz K. Malik on 9/29/14.
@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface TableViewController : UITableViewController
+
+
+@property (nonatomic, strong) NSArray *titles;
+
 
 
 @end
-

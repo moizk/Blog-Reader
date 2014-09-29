@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		C8D977A619D9FF35003FE7EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D977A519D9FF35003FE7EE /* main.m */; };
 		C8D977A919D9FF35003FE7EE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D977A819D9FF35003FE7EE /* AppDelegate.m */; };
-		C8D977AC19D9FF35003FE7EE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D977AB19D9FF35003FE7EE /* ViewController.m */; };
 		C8D977AF19D9FF35003FE7EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8D977AD19D9FF35003FE7EE /* Main.storyboard */; };
 		C8D977B119D9FF35003FE7EE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8D977B019D9FF35003FE7EE /* Images.xcassets */; };
 		C8D977B419D9FF35003FE7EE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8D977B219D9FF35003FE7EE /* LaunchScreen.xib */; };
 		C8D977C019D9FF35003FE7EE /* Blog_ReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D977BF19D9FF35003FE7EE /* Blog_ReaderTests.m */; };
+		C8D977CB19DA0335003FE7EE /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D977CA19DA0335003FE7EE /* TableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,14 +32,14 @@
 		C8D977A519D9FF35003FE7EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C8D977A719D9FF35003FE7EE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C8D977A819D9FF35003FE7EE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C8D977AA19D9FF35003FE7EE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C8D977AB19D9FF35003FE7EE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C8D977AE19D9FF35003FE7EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C8D977B019D9FF35003FE7EE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C8D977B319D9FF35003FE7EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C8D977B919D9FF35003FE7EE /* Blog ReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Blog ReaderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C8D977BE19D9FF35003FE7EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8D977BF19D9FF35003FE7EE /* Blog_ReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Blog_ReaderTests.m; sourceTree = "<group>"; };
+		C8D977C919DA0335003FE7EE /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		C8D977CA19DA0335003FE7EE /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,9 +83,9 @@
 			children = (
 				C8D977A719D9FF35003FE7EE /* AppDelegate.h */,
 				C8D977A819D9FF35003FE7EE /* AppDelegate.m */,
-				C8D977AA19D9FF35003FE7EE /* ViewController.h */,
-				C8D977AB19D9FF35003FE7EE /* ViewController.m */,
 				C8D977AD19D9FF35003FE7EE /* Main.storyboard */,
+				C8D977C919DA0335003FE7EE /* TableViewController.h */,
+				C8D977CA19DA0335003FE7EE /* TableViewController.m */,
 				C8D977B019D9FF35003FE7EE /* Images.xcassets */,
 				C8D977B219D9FF35003FE7EE /* LaunchScreen.xib */,
 				C8D977A319D9FF35003FE7EE /* Supporting Files */,
@@ -219,8 +219,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8D977AC19D9FF35003FE7EE /* ViewController.m in Sources */,
 				C8D977A919D9FF35003FE7EE /* AppDelegate.m in Sources */,
+				C8D977CB19DA0335003FE7EE /* TableViewController.m in Sources */,
 				C8D977A619D9FF35003FE7EE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
