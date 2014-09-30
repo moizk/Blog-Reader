@@ -15,6 +15,8 @@
     
     if  (self) {
         self.title = title;
+        self.author = nil;
+        self.thumbnail = nil;
     }
     return self;
 }
@@ -22,5 +24,20 @@
 + (id) blogPostWithTitle:(NSString *)title {
     return [[self alloc] initWithTitle:title];
 }
+
+
+- (NSURL *) thumbnailURL {
+    return [NSURL URLWithString:self.thumbnail];
+}
+
+- (NSString *) formattedDate {
+    NSDateFormatter *dataFormatter = [[NSDateFormatter alloc] init];
+    [dataFormatter setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSDate *tempDate = [dataFormatter dateFromString:self.date];
+    
+    [dataFormatter setDateFormat:@"EE MMM, dd"];
+    return [dataFormatter stringFromDate:tempDate];
+}
+
 
 @end

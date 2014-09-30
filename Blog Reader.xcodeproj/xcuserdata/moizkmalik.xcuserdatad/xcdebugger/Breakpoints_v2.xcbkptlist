@@ -9,13 +9,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Blog Reader/TableViewController.m"
-            timestampString = "433724664.488338"
+            filePath = "Blog Reader/BlogPost.m"
+            timestampString = "433731804.061618"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
-            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "-formattedDate"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
