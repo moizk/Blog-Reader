@@ -14,6 +14,7 @@
 		C8D977B419D9FF35003FE7EE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C8D977B219D9FF35003FE7EE /* LaunchScreen.xib */; };
 		C8D977C019D9FF35003FE7EE /* Blog_ReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D977BF19D9FF35003FE7EE /* Blog_ReaderTests.m */; };
 		C8D977CB19DA0335003FE7EE /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D977CA19DA0335003FE7EE /* TableViewController.m */; };
+		C8D977CE19DA1327003FE7EE /* BlogPost.m in Sources */ = {isa = PBXBuildFile; fileRef = C8D977CD19DA1327003FE7EE /* BlogPost.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		C8D977BF19D9FF35003FE7EE /* Blog_ReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Blog_ReaderTests.m; sourceTree = "<group>"; };
 		C8D977C919DA0335003FE7EE /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		C8D977CA19DA0335003FE7EE /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		C8D977CC19DA1327003FE7EE /* BlogPost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlogPost.h; sourceTree = "<group>"; };
+		C8D977CD19DA1327003FE7EE /* BlogPost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlogPost.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				C8D977B019D9FF35003FE7EE /* Images.xcassets */,
 				C8D977B219D9FF35003FE7EE /* LaunchScreen.xib */,
 				C8D977A319D9FF35003FE7EE /* Supporting Files */,
+				C8D977CC19DA1327003FE7EE /* BlogPost.h */,
+				C8D977CD19DA1327003FE7EE /* BlogPost.m */,
 			);
 			path = "Blog Reader";
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 				C8D977A919D9FF35003FE7EE /* AppDelegate.m in Sources */,
 				C8D977CB19DA0335003FE7EE /* TableViewController.m in Sources */,
 				C8D977A619D9FF35003FE7EE /* main.m in Sources */,
+				C8D977CE19DA1327003FE7EE /* BlogPost.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
